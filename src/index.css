@@ -43,3 +43,20 @@ footer{
   background-color: yellow;
 
 }
+form {
+  border: 1px solid;
+}
+input {
+  padding-bottom: 25px;
+  border: none;
+  border-bottom: 2px solid red;
+  outline: none;
+}
+textarea{
+  border: none;
+  outline:none;
+}
+.main_note form {
+  display: flex;
+  flex-direction: column;
+}
