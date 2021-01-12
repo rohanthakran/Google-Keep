@@ -3,15 +3,21 @@ import DeleteSharpIcon from '@material-ui/icons/DeleteSharp';
 const Note =(props) =>{
     return (
         <React.Fragment>
+        
+        
             <div className="note">
-                <h1>{props.title}</h1>
+
+                <div className="head"><h1>{props.title}</h1></div>    
                 <br/>
                 <p>{props.content}</p>
-                <button  onClick ={() =>{props.deleteItem(props.id)}}>
-                <DeleteSharpIcon/>
-                </button>
+                
                
+               <div className="mybutton1"> <button  onClick ={() =>{props.deleteItem(props.id)}}>
+                <DeleteSharpIcon style ={{fontSize :"30px"}}/>
+                </button>
             </div>
+            </div> 
+            
         </React.Fragment>
     )
 }

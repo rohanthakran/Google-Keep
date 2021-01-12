@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import Header from './Header'
-import Footer from './Footer'
 import CreateNote from './CreateNote.jsx'
 import Note from './Note.jsx'
 
@@ -21,8 +20,10 @@ const App =() =>{
     return ( 
     <React.Fragment>
         <Header/>
-        <Footer/>
+        
         <CreateNote passNote ={addNote}/>
+      <div className= "container1">
+       <div className="cont">
         {addItem.map((val,index) =>{
             return (
                 <Note key ={index}
@@ -33,6 +34,10 @@ const App =() =>{
                 />
                 )
         })}
+        </div> 
+        </div>
+    
+       
     </React.Fragment>
         )
 }

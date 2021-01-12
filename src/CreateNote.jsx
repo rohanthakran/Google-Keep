@@ -16,10 +16,6 @@ const addEvent = () =>{
 }
 
     const inputEvent = (event) =>{
-
-        // const value = event.target.value;
-        // const name = event.target.value;
-
         const {name,value} = event.target;
         setNote((prevData) =>{
             return {
@@ -27,11 +23,10 @@ const addEvent = () =>{
                 [name] :value,
             }
         })
-
-        console.log(note);
     }
     return (
         <React.Fragment>
+    <div className = "container">
         <div className="main_note">
          <form>
             <input type="text" name="title" value={note.title} onChange={inputEvent} placeholder="Title" autoComplete="off"/>
@@ -39,10 +34,15 @@ const addEvent = () =>{
             <textarea rows="4" cols="50" maxlength="50" name="content" value={note.content} onChange={inputEvent}  placeholder="Write your Note"></textarea>
             
             </form>
+            <div className="mybutton">
             <Button onClick={addEvent}>
-                <AddCircleOutlineSharpIcon/>
+                <AddCircleOutlineSharpIcon style ={{fontSize :"50px",  backgroundColor:"#FBBC05", color:"white", borderRadius :"50%"}}/>
             </Button>
+            </div>
         </div>
+        </div>
+
+     
         </React.Fragment>
     )
 }
