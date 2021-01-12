@@ -7,12 +7,24 @@ const CreateNote = (props) =>{
         title : "",
         content : "",
     });
+
+
 const addEvent = () =>{
     props.passNote(note)
     setNote({
         title: "",
         content:""
     })
+}
+const data = () =>{
+    if(note.title === "" || note.content === ""){
+        alert("Please Input Somethings")
+    }
+    else{
+      addEvent();
+    
+}
+
 }
 
     const inputEvent = (event) =>{
@@ -31,11 +43,11 @@ const addEvent = () =>{
          <form>
             <input type="text" name="title" value={note.title} onChange={inputEvent} placeholder="Title" autoComplete="off"/>
     
-            <textarea rows="4" cols="50" maxlength="50" name="content" value={note.content} onChange={inputEvent}  placeholder="Write your Note"></textarea>
+            <textarea rows="4" cols="50" maxlength="" name="content" value={note.content} onChange={inputEvent}  placeholder="Write your Note"></textarea>
             
             </form>
             <div className="mybutton">
-            <Button onClick={addEvent}>
+            <Button onClick={data}>
                 <AddCircleOutlineSharpIcon style ={{fontSize :"50px",  backgroundColor:"#FBBC05", color:"white", borderRadius :"50%"}}/>
             </Button>
             </div>

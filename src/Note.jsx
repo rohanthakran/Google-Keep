@@ -7,13 +7,13 @@ const Note =(props) =>{
         
             <div className="note">
 
-                <div className="head"><h1>{props.title}</h1></div>    
+                <div className="head"><h1 style ={{  wordWrap: "break-word"}}>{props.title}</h1></div>    
                 <br/>
-                <p>{props.content}</p>
+                <p style ={{  wordWrap: "break-word"}}>{props.content}</p>
                 
                
                <div className="mybutton1"> <button  onClick ={() =>{props.deleteItem(props.id)}}>
-                <DeleteSharpIcon style ={{fontSize :"30px"}}/>
+                <DeleteSharpIcon style ={{fontSize :"35px",  backgroundColor:"yellow" , cursor: "pointer", outline :"none"}}/>
                 </button>
             </div>
             </div> 
