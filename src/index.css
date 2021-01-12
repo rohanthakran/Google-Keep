@@ -90,7 +90,7 @@ textarea{
 }
 .mybutton1{
   position: relative;
-  bottom:-29px;
+  bottom:-33px;
   float: right;
   
 
@@ -118,11 +118,12 @@ button{
     padding:0;
     margin : 15px 0px  0px  0px;
   }
+  .container1{
+    max-width: 81%;
+    margin : 0 auto; 
+  }
 }
-.container1{
-  max-width: 81%;
-  margin : 0 auto; 
-}
+
 .cont{
 
  display: inline-block;

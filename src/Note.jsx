@@ -13,7 +13,7 @@ const Note =(props) =>{
                 
                
                <div className="mybutton1"> <button  onClick ={() =>{props.deleteItem(props.id)}}>
-                <DeleteSharpIcon style ={{fontSize :"35px",  backgroundColor:"yellow" , cursor: "pointer", outline :"none"}}/>
+                <DeleteSharpIcon style ={{fontSize :"45px",  backgroundColor:"#f5ba13" , cursor: "pointer", outline :"none", padding: "3px", borderRadius:"50%" }}/>
                 </button>
             </div>
             </div> 
